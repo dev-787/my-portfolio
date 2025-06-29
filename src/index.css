@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gilroy', sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #0B0A0E;
+  
+}
+main {
+  width: 100%;
+  height: auto;
+}
+
+:root {
+  --color-light: #ECDFCC;
+  --color-dark: #0b0a0e;
+  --color-muted: #57544A;
+}
