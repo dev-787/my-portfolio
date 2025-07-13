@@ -1,6 +1,10 @@
 import "./MainGrid.css";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import profileImg from '../assets/IMG_3930.jpg';
+import web1 from '../assets/web1.png';
+import web2 from '../assets/web2.png';
+import web3 from '../assets/web3.png';
 
 const MainGrid = () => {
   const navigate = useNavigate();
@@ -147,7 +151,7 @@ const MainGrid = () => {
       <div className="Grid1">
         <div className="Row1">
           <div className="pic">
-            <img src="/src/assets/IMG_3930.JPG" alt="Profile" />
+            <img src={profileImg} alt="Profile" />
           </div>
           <div className="about">
             <div className="img-cont">
@@ -172,13 +176,13 @@ const MainGrid = () => {
             <div className="project-label">Project</div>
             <div className="project-container">
               <div className="cards card1">
-                <img src="/src/assets/web2.png" alt="roasetto" />
+                <img src={web2} alt="roasetto" />
               </div>
               <div className="cards card2">
-                <img src="/src/assets/web1.png" alt="Fylla Project" />
+                <img src={web1} alt="Fylla Project" />
               </div>
               <div className="cards card3">
-                <img src="/src/assets/web3.png" alt="Roasetto Project" />
+                <img src={web3} alt="Roasetto Project" />
               </div>
             </div>
           </div>
