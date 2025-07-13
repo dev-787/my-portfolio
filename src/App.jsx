@@ -1,14 +1,18 @@
-import Footer from "./component/Footer";
-import Header from "./component/Header"
-import MainGrid from "./component/MainGrid";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './component/Home';
+import Project from './component/Project';
+import Contact from './component/Contact';
 
 function App() {
   return (
-    <div className="grid-container">
-      <Header />
-      <MainGrid />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Project />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 

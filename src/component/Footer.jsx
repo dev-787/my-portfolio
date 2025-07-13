@@ -31,7 +31,7 @@ const Footer = () => {
       platform: 'Email',
       icon: 'src/assets/icons8-mail-50.png',
       handle: 'Say Hello',
-      url: 'https://mail.google.com/mail/?view=cm&to=workwithdev.tech@gmail.com',
+      url: 'https://mail.google.com/mail/?view=cm&to=devdtailor555@gmail.com',
       isEmail: true
     }
   ];

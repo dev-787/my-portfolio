@@ -14,7 +14,22 @@
   height: 45vh;
   width: auto;
   border-radius: 14px;
-  padding: 1rem;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.Row1 .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  border-radius: 14px;
+}
+
+.Row1 .pic:hover img {
+  transform: scale(1.15);
 }
 .Row1 .about {
   background: var(--color-light);
@@ -29,6 +44,19 @@
   height: 16vh;
   display: flex;
   justify-content: end;
+}
+
+.Row1 .about .img-cont svg {
+  animation: rotate360 8s linear infinite;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .Row1 .about h3 {
   font-size: 1.6rem;
@@ -150,18 +178,15 @@
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
-  font-family: "Syne", sans-serif;
 }
 .Row2 .experience .experience-item .job-info .company {
   color: var(--color-muted);
   font-size: 0.95rem;
-  font-family: "Syne", sans-serif;
 }
 .Row2 .experience .experience-item .duration {
   color: var(--color-muted);
   font-size: 0.95rem;
   white-space: nowrap;
-  font-family: "Syne", sans-serif;
 }
 .Row2 .experience .view-resume {
   background: var(--color-light);
@@ -174,7 +199,6 @@
   color: var(--color-muted);
   text-decoration: none;
   font-size: 0.9rem;
-  font-family: "Syne", sans-serif;
   transition: all 0.2s;
 }
 .Row2 .experience .view-resume:hover {
@@ -205,53 +229,52 @@
   font-weight: 500;
   font-family: "Syne", sans-serif;
   font-size: 14px;
+  margin-bottom: 1.5rem;
 }
 
 .stack-container {
-  margin-top: 2rem;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
+  padding: 1rem 0;
 }
 
 .stack-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  justify-items: center;
-  position: relative;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .stack-item {
   display: flex;
-  justify-content: center;
   align-items: center;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  justify-content: center;
+  flex: 1;
+  height: 80px;
+  background: var(--color-light);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
   position: relative;
-  z-index: 1;
+}
+
+.stack-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .stack-icon {
-  width: 70px;
-  height: 70px;
-  background: var(--color-light);
-  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.stack-item:hover .stack-icon {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
 }
 
 .stack-icon img {
-  width: 100%;
-  height: 100%;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
 
@@ -367,20 +390,4 @@
   .projects .project-images {
     transform: translateX(2rem);
   }
-  
-  .stack-container {
-    padding: 1.5rem;
-    gap: 2rem;
-  }
-  
-  .stack-row {
-    gap: 1.5rem;
-  }
-  
-  .stack-icon {
-    width: 80px;
-    height: 80px;
-    padding: 14px;
-    border-radius: 18px;
-  }
-}
+}/*# sourceMappingURL=MainGrid.css.map */

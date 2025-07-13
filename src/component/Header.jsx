@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Header.css';
-import logo from '../assets/icons8-camera-shutter-100.png';
+import logo from '../assets/about-icon.svg';
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate('/contact');
+  };
   
   return (
     <div><header className="navbar">
@@ -15,7 +21,7 @@ const Header = () => {
         </div>
 
         <div className="right1">
-          <button>Contact</button>
+<button onClick={handleContactClick}>Contact</button>
         </div>
       </header></div>
   )
