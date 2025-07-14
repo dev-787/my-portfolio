@@ -1,35 +1,40 @@
 import React from 'react';
 import './Footer.css';
+import githubIcon from '../assets/icons8-github-50.png';
+import linkedinIcon from '../assets/icons8-linkedin-50.png';
+import twitterIcon from '../assets/icons8-twitter-50.png';
+import instagramIcon from '../assets/icons8-instagram-50.png';
+import mailIcon from '../assets/icons8-mail-50.png';
 
 const Footer = () => {
   const socialLinks = [
     {
       platform: 'Github',
-      icon: 'src/assets/icons8-github-50.png',
+      icon: githubIcon,
       handle: '@dev-787',
       url: 'https://github.com/dev-787'
     },
     {
       platform: 'LinkedIn',
-      icon: 'src/assets/icons8-linkedin-50.png',
+      icon: linkedinIcon,
       handle: '@Dev Tailor',
       url: 'https://www.linkedin.com/in/tech-dev-tailor/'
     },
     {
       platform: 'Twitter',
-      icon: 'src/assets/icons8-twitter-50.png',
+      icon: twitterIcon,
       handle: '@Dev_cod7s',
       url: 'https://x.com/Dev_cod7s'
     },
     {
       platform: 'Instagram',
-      icon: 'src/assets/icons8-instagram-50.png',
+      icon: instagramIcon,
       handle: '@dev-787',
       url: 'https://www.instagram.com/dev._787/'
     },
     {
       platform: 'Email',
-      icon: 'src/assets/icons8-mail-50.png',
+      icon: mailIcon,
       handle: 'Say Hello',
       url: 'https://mail.google.com/mail/?view=cm&to=devdtailor555@gmail.com',
       isEmail: true
