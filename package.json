@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && copy \"assets/Frontend Resume.pdf\" \"dist/assets/\"",
+    "build": "vite build && powershell -Command \"Copy-Item 'assets/Frontend Resume.pdf' 'dist/assets/'\" && powershell -Command \"New-Item -Path 'dist/.nojekyll' -ItemType File -Force\"",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
