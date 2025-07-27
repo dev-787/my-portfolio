@@ -206,7 +206,7 @@ const MainGrid = () => {
               <div className="duration">2009 - 2023</div>
             </div>
 
-            <a href="./assets/Frontend Resume.pdf" target="_blank" rel="noopener noreferrer" className="view-resume">
+            <a href="/Frontend_Resume.pdf" target="_blank" rel="noopener noreferrer" className="view-resume">
               View resume ↗
             </a>
           </div>
